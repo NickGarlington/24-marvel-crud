@@ -17,11 +17,11 @@ class TeamsController {
 	}
 
   getData() {
-    this._$http
-      .get(`https://teams.mybluemix.net/api/teams`)
-      .then((response) => {
-        this.teams = response.data;
-      })
+		this._$http
+		.get(`https://teams.mybluemix.net/api/teams`)
+		.then((response)=>{
+			this.teams = response.data;
+		})
   }
 
 }
