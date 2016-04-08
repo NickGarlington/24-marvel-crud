@@ -17,6 +17,7 @@ class TeamsController {
 	}
 
   getData() {
+		console.log("trying to get data");
 		this._$http
 		.get(`https://teams.mybluemix.net/api/teams`)
 		.then((response)=>{
