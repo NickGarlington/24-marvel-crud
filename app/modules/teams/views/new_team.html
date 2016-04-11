@@ -1,12 +1,28 @@
+
+
+<div class="new-team">
+  New Team
+</div>
+
 <form ng-submit="newCtrl.createTeam()">
-  <div class="teamname-bar">
-    Team Name
+  <div class="holder">
+    <div class="teamname-bar">
+      <div class="teamname">
+        Team Name
+      </div>
+      <input type="text" placeholder="The Avengers" ng-model="newCtrl.name">
+    </div>
   </div>
+
   <div class="my-name">
-    Your Name
+    <div class="yourname">
+      Your Name
+    </div>
+    <input type="text" placeholder="Your Name" ng-model="newCtrl.creator">
   </div>
-  <input type="text" placeholder="The Avengers" ng-model="newCtrl.name">
-  <input type="text" placeholder="Your Name" ng-model="newCtrl.creator">
-  <input type="submit" value="Create Team">
+
+  <div class="first-button">
+    <input type="submit" value="Create Team">
+  </div>
 
 </form>
