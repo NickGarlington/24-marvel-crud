@@ -1,10 +1,23 @@
-<div class="last-page">
-  <a ui-sref="edit_team({id: teamCtrl.team.id})">Is This Your Team? Edit It!</a>
-</div>
-<div ng-repeat="hero in teamCtrl.heroes">
-  <div class="together">
-    <div class="last-image"><img src="{{hero.image}}"></div>
-    <div class="last-name">{{hero.name}}</div>
-
+<div class="all">
+  <div class="last-page">
+    <div class="my-squad">
+      {{ teamCtrl.team.name }}
+    </div>
+    <a ui-sref="edit_team({id: teamCtrl.team.id})">Is This Your Team? Edit It!</a>
   </div>
-  <div class="last-image" ng-repeat="hero in teamCtrl.heroes"></div>{{hero.description}}</div>
+
+  <table>
+    <tbody>
+      <tr ng-repeat="character in teamCtrl.heroes">
+        <td>
+          <img ng-src="{{ character.image }}">
+        </td>
+
+        <td class="hero-info">
+          <h2 class="hero-name">{{ character.name }}</h2>
+          <p class="description">{{character.description}}</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

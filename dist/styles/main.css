@@ -1,7 +1,8 @@
 .new-team {
   font-size: 100px;
   color: black;
-  text-shadow: 4px 4px 4px gold; }
+  text-shadow: 4px 4px 4px gold;
+  font-family: cursive; }
 
 .form-column {
   float: left; }
@@ -47,7 +48,8 @@ td img {
 h1 {
   font-size: 80px;
   margin-left: 100px;
-  text-shadow: 4px 4px 4px gold; }
+  text-shadow: 4px 4px 4px gold;
+  font-family: cursive; }
 
 .hero-box input {
   margin-left: 100px;
@@ -70,28 +72,39 @@ h2 {
 h3 {
   text-align: center;
   font-size: 60px;
-  text-shadow: 2px 2px 2px red; }
+  text-shadow: 2px 2px 2px red;
+  font-family: cursive; }
 
 h4 {
-  font-size: 30px;
+  font-size: 50px;
   margin: 0;
   border-bottom: 1px solid gray;
-  text-shadow: 1px 1px 1px gold; }
+  text-shadow: 1px 1px 1px gold;
+  margin-left: 100px;
+  height: 75px;
+  font-family: cursive; }
 
 ul {
   list-style-type: none;
-  margin-top: 100px;
-  padding: 0; }
+  margin-top: 50px;
+  padding: 0;
+  margin-left: 100px; }
 
 .clearfix {
   overflow: auto;
   zoom: 1; }
 
-.user-names {
-  display: inline-block; }
+.user-teams a {
+  float: right;
+  background-color: gold;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px 40px 0 0; }
 
 body {
-  height: 1000px; }
+  height: 100%;
+  margin: 0;
+  background-color: gray; }
 
 .container {
   height: 1000px; }
@@ -112,4 +125,10 @@ body {
 
 span {
   font-size: 20px;
-  color: gray; }
+  color: black; }
+
+.my-squad {
+  margin-left: 100px;
+  text-shadow: 10px 10px 10px gold;
+  font-size: 100px;
+  font-family: cursive; }
